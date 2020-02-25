@@ -10,12 +10,12 @@ class LoginContainer extends React.Component {
         return (
             <div>
                 <Switch>
-                    <Route path="/">
-                        <LoginForm />
-                    </Route>
-
                     <Route path="/register">
                         <RegisterForm />
+                    </Route>
+
+                    <Route path="/">
+                        <LoginForm />
                     </Route>
                 </Switch>
 

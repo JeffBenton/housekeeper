@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import LoginContainer from './Containers/LoginContainer'
+import LoginContainer from './Containers/LoginContainer';
+import AppContainer from './Containers/AppContainer';
 
 
 

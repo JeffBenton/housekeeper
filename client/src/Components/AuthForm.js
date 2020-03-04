@@ -20,6 +20,7 @@ class AuthForm extends React.Component {
     };
 
     handleSubmit = e => {
+        e.preventDefault();
         /*
             TODO
                 1. actually submit the post request

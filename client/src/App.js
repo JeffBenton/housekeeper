@@ -1,16 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import LoginContainer from './Containers/LoginContainer';
-import AppContainer from './Containers/AppContainer';
-
-
+import AuthForm from "./Components/AuthForm";
 
 function App() {
   return (
     <div className="App">
         <Router>
-            <LoginContainer />
+            <Switch>
+                <Route path="/">
+                    <AuthForm />
+                </Route>
+            </Switch>
         </Router>
     </div>
   );

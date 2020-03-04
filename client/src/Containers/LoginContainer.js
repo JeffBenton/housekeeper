@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import RegisterForm from '../Components/RegisterForm'
 import LoginForm from '../Components/LoginForm'
+import AuthForm from "../Components/AuthForm";
 
 
 class LoginContainer extends React.Component {
@@ -15,7 +16,8 @@ class LoginContainer extends React.Component {
                     </Route>
 
                     <Route path="/">
-                        <LoginForm />
+                        {/*<LoginForm />*/}
+                        <AuthForm />
                     </Route>
                 </Switch>
 

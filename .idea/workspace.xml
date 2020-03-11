@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2890664-20af-41c7-9d74-1e1fd1e56f36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,7 @@
       <workItem from="1581469226989" duration="1932000" />
       <workItem from="1582671814690" duration="2440000" />
       <workItem from="1583287772796" duration="6432000" />
-      <workItem from="1583885048702" duration="265000" />
+      <workItem from="1583885048702" duration="891000" />
     </task>
     <servers />
   </component>

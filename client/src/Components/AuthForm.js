@@ -27,11 +27,11 @@ class AuthForm extends React.Component {
                 3. handle errors
                 4. handle success
          */
-
+        console.log("here")
         this.setState({
             email: "",
             password: "",
-            confirm_password: ""
+            password_confirm: ""
         });
     };
 
@@ -49,7 +49,7 @@ class AuthForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" onChange={this.handleChange} name="email" placeholder="email" value={this.state.email} />
                         <input type="password" onChange={this.handleChange} name="password" placeholder="password" value={this.state.password} />
-                        <input type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm password" value={this.state.confirm_password} />
+                        <input type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm password" value={this.state.password_confirm} />
                         <input type="submit" />
                     </form>
                     or <a onClick={this.swapForm} href="#">Log In</a>

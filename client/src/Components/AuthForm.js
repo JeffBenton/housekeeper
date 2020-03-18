@@ -27,22 +27,40 @@ class AuthForm extends React.Component {
                 3. handle errors
                 4. handle success
          */
-        fetch('/api/register', {
-            method: 'post',
-            body: JSON.stringify({
-                'email': this.state.email,
-                'password': this.state.password,
-                'password_confirm': this.state.password_confirm
+        if(this.state.displayRegister) {
+            fetch('/api/register', {
+                method: 'post',
+                body: JSON.stringify({
+                    'email': this.state.email,
+                    'password': this.state.password,
+                    'password_confirm': this.state.password_confirm
+                })
             })
-        })
-            .then(res => res.json())
-            .then(resJSON => {
-                this.setState({
-                    email: "",
-                    password: "",
-                    password_confirm: ""
-                });
+                .then(res => res.json())
+                .then(resJSON => {
+                    this.setState({
+                        email: "",
+                        password: "",
+                        password_confirm: ""
+                    });
             });
+        }
+        else {
+            fetch('/api/signin', {
+                method: 'post',
+                body: JSON.stringify({
+                    'email': this.state.email,
+                    'password': this.state.password
+                })
+            })
+                .then(res => res.json())
+                .then(resJSON => {
+                    this.setState({
+                        email: "",
+                        password: ""
+                    })
+                })
+        }
     };
 
     swapForm = () => {

@@ -22,10 +22,25 @@ class RegisterForm extends React.Component {
         e.preventDefault();
         /*
             TODO
-                1. actually submit the post request
-                3. handle errors
-                4. handle success
+                1. handle errors
+                2. handle success
          */
+        fetch('/api/register', {
+            method: 'post',
+            body: JSON.stringify({
+                'email': this.state.email,
+                'password': this.state.password,
+                'password_confirm': this.state.password_confirm
+            })
+        })
+            .then(res => res.json())
+            .then(resJSON => {
+                this.setState({
+                    email: "",
+                    password: "",
+                    password_confirm: ""
+                })
+            })
     };
 
     render() {

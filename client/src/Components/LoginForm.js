@@ -21,10 +21,23 @@ class LoginForm extends React.Component {
         e.preventDefault();
         /*
             TODO
-                1. actually submit the post request
-                3. handle errors
-                4. handle success
+                1. handle errors
+                2. handle success
          */
+        fetch('/api/login', {
+            method: 'post',
+            body: JSON.stringify({
+                'email': this.state.email,
+                'password': this.state.password
+            })
+        })
+            .then(res => res.json())
+            .then(resJSON => {
+                this.setState({
+                    email: "",
+                    password: ""
+                })
+            })
     };
 
     render() {

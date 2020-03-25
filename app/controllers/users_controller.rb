@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     puts params
   end
 
-  def signin
+  def login
     puts params
   end
 

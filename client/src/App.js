@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import AuthForm from "./Components/AuthForm";
+import RegisterForm from "./Components/RegisterForm";
+import LoginForm from "./Components/LoginForm";
 
 function App() {
   return (
@@ -9,7 +10,10 @@ function App() {
         <Router>
             <Switch>
                 <Route path="/">
-                    <AuthForm />
+                    <LoginForm />
+                </Route>
+                <Route path="/register">
+                    <RegisterForm />
                 </Route>
             </Switch>
         </Router>

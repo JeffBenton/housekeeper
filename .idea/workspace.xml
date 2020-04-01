@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2890664-20af-41c7-9d74-1e1fd1e56f36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Components/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/RegisterForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
       <workItem from="1583287772796" duration="6432000" />
       <workItem from="1583885048702" duration="2303000" />
       <workItem from="1584488395585" duration="1783000" />
-      <workItem from="1585095696046" duration="3225000" />
+      <workItem from="1585095696046" duration="3474000" />
     </task>
     <servers />
   </component>

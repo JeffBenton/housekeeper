@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
 
   def register
-    puts params
+    puts "$$$$$$$$$$$$$$$$$"
+    puts params[:email]
+    puts "$$$$$$$$$$$$$$$$$"
+    render json: { status: 200 }
   end
 
   def login

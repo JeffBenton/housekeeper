@@ -6,6 +6,7 @@ class RegisterForm extends React.Component {
     constructor() {
         super();
         this.state = {
+            name: "",
             email: "",
             password: "",
             password_confirm: ""
@@ -36,6 +37,7 @@ class RegisterForm extends React.Component {
             .then(res => res.json())
             .then(resJSON => {
                 this.setState({
+                    name: "",
                     email: "",
                     password: "",
                     password_confirm: ""
@@ -47,6 +49,7 @@ class RegisterForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <input type="text" onChange={this.handleChange} name="name" placeholder="name" value={this.state.name} />
                     <input type="text" onChange={this.handleChange} name="email" placeholder="email" value={this.state.email} />
                     <input type="password" onChange={this.handleChange} name="password" placeholder="password" value={this.state.password} />
                     <input type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm password" value={this.state.password_confirm} />

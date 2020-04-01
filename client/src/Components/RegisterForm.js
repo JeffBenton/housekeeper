@@ -26,9 +26,13 @@ class RegisterForm extends React.Component {
                 1. handle errors
                 2. handle success
          */
-        fetch('/api/register', {
+        fetch('api/register', {
             method: 'post',
+            headers: {
+                "Content-Type": 'application/json'
+            },
             body: JSON.stringify({
+                'name': "jeff",
                 'email': this.state.email,
                 'password': this.state.password,
                 'password_confirm': this.state.password_confirm

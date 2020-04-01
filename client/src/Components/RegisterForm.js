@@ -29,10 +29,10 @@ class RegisterForm extends React.Component {
         fetch('api/register', {
             method: 'post',
             headers: {
-                "Content-Type": 'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                'name': "jeff",
+                'name': this.state.name,
                 'email': this.state.email,
                 'password': this.state.password,
                 'password_confirm': this.state.password_confirm

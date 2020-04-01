@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def register
     puts "$$$$$$$$$$$$$$$$$"
-    puts params[:name]
+    puts params
     puts "$$$$$$$$$$$$$$$$$"
     render json: { status: 200 }
   end

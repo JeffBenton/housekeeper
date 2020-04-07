@@ -9,12 +9,28 @@ class LandingPage extends React.Component {
         displayLoginForm: true
     };
 
+    swapForm = e => {
+        e.preventDefault();
+
+        this.setState({
+            displayLoginForm: !this.state.displayLoginForm
+        });
+    };
+
     displayForm = () => {
         if(this.state.displayLoginForm) {
-            return <LoginForm />
+            return (
+                <>
+                    <h4>Please sign in</h4>
+                    <LoginForm />
+                    <p>or <a onClick={this.swapForm} href="/">register</a></p>
+                </>
+            )
         }
         else {
-            return <RegisterForm />
+            return (
+                <RegisterForm />
+            )
         }
     };
 
@@ -22,7 +38,7 @@ class LandingPage extends React.Component {
         return (
             <div>
                 <h1>Welcome to Housekeeper!</h1>
-                <h4>Please sign in or register</h4>
+
                 {this.displayForm()}
             </div>
         )

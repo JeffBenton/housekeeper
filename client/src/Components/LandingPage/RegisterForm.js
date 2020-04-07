@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
 
 class RegisterForm extends React.Component {
 
@@ -59,7 +58,6 @@ class RegisterForm extends React.Component {
                     <input type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm password" value={this.state.password_confirm} />
                     <input type="submit" />
                 </form>
-                or <NavLink to="/">Log In</NavLink>
             </div>
         )
     }

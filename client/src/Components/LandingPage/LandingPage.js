@@ -29,7 +29,11 @@ class LandingPage extends React.Component {
         }
         else {
             return (
-                <RegisterForm />
+                <>
+                    <h4>Please register</h4>
+                    <RegisterForm />
+                    <p>or <a onClick={this.swapForm} href="/">sign in</a></p>
+                </>
             )
         }
     };

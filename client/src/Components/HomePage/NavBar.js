@@ -1,9 +1,16 @@
 import React from 'react';
 
+import NavButton from "./NavButton";
+
 class NavBar extends React.Component {
     render() {
         return (
-            <div>NavBar</div>
+            <div>
+                <NavButton />
+                <NavButton />
+                <NavButton />
+                <NavButton />
+            </div>
         )
     }
 }

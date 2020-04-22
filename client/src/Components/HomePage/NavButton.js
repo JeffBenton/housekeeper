@@ -1,9 +1,10 @@
 import React from 'react';
+import NavLink from "react-router-dom";
 
 class NavButton extends React.Component {
     render() {
         return (
-            <div>{this.props.title}</div>
+            <NavLink to={`/${this.props.url}`}>{this.props.title}</NavLink>
         )
     }
 }

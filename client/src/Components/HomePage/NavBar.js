@@ -1,17 +1,17 @@
 import React from 'react';
 
 import NavButton from "./NavButton";
-import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col";
 
 class NavBar extends React.Component {
     render() {
         return (
-            <Row>
-                <NavButton title="Houses" url="houses" />
-                <NavButton title="Profile" url="profile" />
-                <NavButton title="Bookings" url="bookings" />
-                <NavButton title="Logout" url="logout" />
-            </Row>
+            <>
+                <Col><NavButton title="Houses" url="houses" /></Col>
+                <Col><NavButton title="Profile" url="profile" /></Col>
+                <Col><NavButton title="Bookings" url="bookings" /></Col>
+                <Col><NavButton title="Logout" url="logout" /></Col>
+            </>
         )
     }
 }

@@ -6,10 +6,10 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <NavButton />
-                <NavButton />
-                <NavButton />
-                <NavButton />
+                <NavButton title="Houses" />
+                <NavButton title="Profile" />
+                <NavButton title="Bookings" />
+                <NavButton title="Logout" />
             </div>
         )
     }

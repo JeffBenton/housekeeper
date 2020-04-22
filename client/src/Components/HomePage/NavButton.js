@@ -3,7 +3,7 @@ import React from 'react';
 class NavButton extends React.Component {
     render() {
         return (
-            <div>NavButton</div>
+            <div>{this.props.title}</div>
         )
     }
 }
